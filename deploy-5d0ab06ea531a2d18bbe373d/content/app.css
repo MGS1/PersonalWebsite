@@ -1,0 +1,206 @@
+﻿body {
+    /*font-family: 'Open Sans',sans-serif width: 100%;*/
+    height: 100%;
+    font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    background-color: #000;
+    font-size:20px;
+}
+
+header, footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Added to fix the dumb bootstrap margin that made the horizontal scroll bar appear.*/
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*Added to enable the floating, back-to-top button to work.*/
+.back-to-top {
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    bottom: 40px;
+    right: 30px;
+}
+
+/*Necessary CSS for animated progress bar on page load.*/
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.preloader-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,1);
+    z-index: 2;
+}
+
+.percentage {
+    z-index: 100;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.loader,
+.percentage {
+    height: 30px;
+    max-width: 500px;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+    .loader:after,
+    .percentage:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+.trackbar {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.99;
+}
+
+.loadbar {
+    width: 0%;
+    height: 100%;
+    background: repeating-linear-gradient( 45deg, #008737, #008737 10px, #69AF23 10px, #69AF23 20px ); /* Stripes Background Gradient */
+    box-shadow: 0px 0px 14px 1px #008737;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: flicker 5s infinite;
+    overflow: hidden;
+}
+
+.glow {
+    width: 0%;
+    height: 0%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px 10px #008737;
+    position: absolute;
+    bottom: -5px;
+    animation: animation 5s infinite;
+}
+
+@keyframes animation {
+    10% {
+        opacity: 0.9;
+    }
+    30% {
+        opacity: 0.86;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0.75;
+    }
+}
+
+.navbar{
+    margin-bottom: 0px;
+    padding: 15px 15px;
+}
+
+.fill-screen {
+    width: 100%;
+    background-position: center;
+    display: table;
+    text-align: center;
+    background: url(../images/background-image.JPG) no-repeat bottom center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    padding:7%;
+    padding-top:7%;
+}
+
+.intro-text{
+    font-size: 100px;
+    font-weight: 700;
+}
+.descriptive {
+    font-size: 30px;
+}
+
+a {
+    color: crimson;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        color: white;
+    }
+
+.text-boxing {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    background: rgba(1, 1, 1, .6);
+    border-radius: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.uppercase{
+    text-transform:uppercase;
+}
+
+.header2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 40px;
+    color: crimson;
+}

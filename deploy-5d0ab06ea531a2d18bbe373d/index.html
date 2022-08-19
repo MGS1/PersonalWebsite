@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/app.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/MyScripts.js"></script>
+</head>
+<body>
+    <!--Floating button for back to top functionality.-->
+    <a href="#" class="back-to-top btn btn-default">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <!--Webpage Navbar-->
+    <header class="uppercase" id="top">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#top">Marcus Spring</a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Putting "header" underneath navbar for kix-->
+    <div class="container-fluid">
+        <div class="fill-screen">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-boxing">
+                    <img class="img-circle" src="images/profile.jpg" style="border-radius: 90%; width: 150px; height: 150px;">
+                    <h1 class="intro-text">Marcus Spring</h1>
+                    <hr />
+                    <div class="descriptive">
+                        <p>
+                            Student at <a href="http://osu.edu/" target="_blank">The Ohio State University</a><br>
+                            Engineering Undergraduate
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Website Content-->
+    <section class="container-fluid content-section text-center" id="about" style="padding-top: 100px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="header2">About Me</h2>
+                <hr>
+                <p>
+                    Content 1
+
+                    dsf
+                    s
+                </p>
+                <p>
+                    Content 1
+
+                    dsf
+                    s
+                </p>
+                <p>
+                    Content 1
+
+                    dsf
+                    s
+                </p>
+                <p>
+                    Content 1
+
+                    dsf
+                    s
+                </p>
+
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid content-section text-center" id="projects" style="padding-top: 100px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="header2">My Projects</h2>
+                <hr>
+                <p>
+                    Content 2
+                    s
+                    df
+                    s
+                    sdf
+                </p>
+                <p>
+                    Content 2
+                    s
+                    df
+                    s
+                    sdf
+                </p>
+                <p>
+                    Content 2
+                    s
+                    df
+                    s
+                    sdf
+                </p>
+                <p>
+                    Content 2
+                    s
+                    df
+                    s
+                    sdf
+                </p>
+
+                <hr>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid content-section text-center" id="contact" style="padding-top: 100px;">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2 class="header2">Contact Me</h2>
+                <hr>
+                <p>
+                    Feel free to email or connect with me on any of the following services:
+                </p>
+                <p><a href="mailto:spring.102@osu.edu">spring.102@osu.edu</a></p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!--Website Footer-->
+    <footer class="container-fluid">
+        <p>Marcus Spring - 2018</p>
+    </footer>
+    <!--Accurate Progess Bar Representing PageLoad-->
+    <div class="preloader-wrap">
+        <div class="percentage" id="percent"></div>
+        <div class="loader">
+            <div class="trackbar">
+                <div class="loadbar"></div>
+            </div>
+            <div class="glow"></div>
+        </div>
+    </div>
+    <script src="Scripts/MyScripts.js"></script>
+    <script>
+        $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
+            });
+        });
+    </script>
+</body>
+<!--TO DO:
+    Finish Pluralsite Navbar animation and relevant modules
+    Add site traffic analyzer
+    Add actual content to web sections
+    Add social media buttons
+    Add PDF Downloader to allow users to obtain my resume
+    -->
+</html>
